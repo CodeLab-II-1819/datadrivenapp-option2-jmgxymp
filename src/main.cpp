@@ -1,18 +1,13 @@
-/*
- Starter code for Data Driven App assignment CodeLab II
- Based on basic example of ofxTwitter by Christopher Baker
- <https://christopherbaker.net>
- SPDX-License-Identifier:    MIT
-*/
-
-
+#include "ofMain.h"
 #include "ofApp.h"
 
+//========================================================================
+int main( ){
+	ofSetupOpenGL(1920,1080,OF_FULLSCREEN);			// <-------- setup the GL context
 
-int main()
-{
-    //create small GUI window
-    ofSetupOpenGL(250, 75, OF_WINDOW);
-    //run the app from the ofApp class
-    return ofRunApp(std::make_shared<ofApp>());
+	// this kicks off the running of my app
+	// can be OF_WINDOW or OF_FULLSCREEN
+	// pass in width and height too:
+	ofRunApp(new ofApp());
+
 }
